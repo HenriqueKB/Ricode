@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RiCode Solutions</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="active">Sobre</a></li>
+                    <li><a href="serviços.html">Serviços</a></li>
+                    <li><a href="onde estamos.html">Onde Estamos?</a></li>
+                    <li><a href="contato.html">Contate-nos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>RiCode Solutions</h1>
+            <section id="servicos">
+                <h1>Serviços</h1>
+                <p>Nossos serviços incluem desenvolvimento de sites, aplicativos web e soluções de software.</p>
+            </section>
+            
+            <section id="calcularPreco"class="porteEmpresa">
+
+                <h2>Responda e veja o preço do nosso 
+                serviço:</h2>
+                <label for="porteEmpresa">Porte da Empresa:</label>
+                <select id="porteEmpresa">
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+                
+                </select>   
+          
+
+           <section id="calcularPreco"class="areaCalculo">
+                <label for="receita">Receita Anual(R$):</label>
+                <input type= "text" id="receita" placeholder="Ex: 50000"><br>
+                <label for="tipoServico">Tipo de Serviço:</label>
+                <select id="tipoServico">
+                <option value="institucional">Site Institucional</option>
+                <option value="ecommerce">Loja Virtual</option>
+                <option value="portal">Portal de Notícias</option>
+                </select>
+                <br>
+                <button onclick="calcular()">Calcular Preço</button>
+                <div id="resultado"></div>
+
+           
+            </section>  
+
+            <section> 
+                <h1>Preços</h1>
+                <p>Confira nossos preços para os serviços oferecidos:</p>
+
+            <table>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Site Institucional:</td>
+                    <td>R$ 1.499,00</td>
+                </tr>
+                <tr>
+                    <td>Loja Virtual:</td>
+                    <td>R$ 2.499,00</td>
+                </tr>
+                <tr>
+                    <td>Portal de Notícias:</td>
+                    <td>R$ 3.499,00</td>
+                </tr>
+            </table>
+        </section>
+        
+            
+                <footer>
+                    <h3>Entre em contato</h3>
+                    <p>Telefone: <a href="tel:+554436193000">(44) 99142-8080</a></p>
+                    <p>Av. Brasil, 1123 - Zona 1, Cianorte - PR, 87200-000</p>
+                    <div class="social">
+
+                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+
+                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                        
+                        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    </div>
+        
+        
+                    <p>© 2025 - RiCode Solutions - Todos os direitos reservados</p>
+                </footer>
+                <script src="calcule.js"></script>
+    </body>
+    </html>
